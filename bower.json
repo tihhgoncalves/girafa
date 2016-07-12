@@ -1,0 +1,20 @@
+{
+  "name": "girafa",
+  "homepage": "https://github.com/zbraestudio/girafa",
+  "authors": [
+    "Tihh Gonçalves <tihh.gon@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "girafaCMS": "https://github.com/zbraestudio/girafaCMS.git"
+  }
+}
