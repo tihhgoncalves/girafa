@@ -1,28 +1,30 @@
 <?
+$config                           = array();
 
 /**
  * Gerais
  */
-$GLOBALS["SITE_TITLE"]              = "Título do Site";
-$GLOBALS["SITE_PAGEINDEX"]          = "home";
+$config["SITE_TITLE"]              = "Título do Site";
+$config["SITE_PAGEINDEX"]          = "home";
+$config["SITEKEY"]                = "123456789";
 
 
 /**
  * Path's
  */
-$GLOBALS["ROOT_PATH"]               = "D:/github/girafa/bower_components/girafaCMS/";
-$GLOBALS["ROOT_URL"]                = "http://localhost/github/girafa/";
+$config["ROOT_PATH"]               = "D:/github/girafa/";
+$config["ROOT_URL"]                = "http://localhost/github/girafa/";
 
 
 /**
  * DB
  */
-$GLOBALS["DB_HOST"]                 = "localhost";
-$GLOBALS["DB_USER"]                 = "root";
-$GLOBALS["DB_PASS"]                 = "";
-$GLOBALS["DB_PORT"]                 = "";
-$GLOBALS["DB_DATABASE"]             = "nome_do_db";
-$GLOBALS["DB_PERSISTENT"]           = true;
+$config["DB_HOST"]                 = "localhost";
+$config["DB_USER"]                 = "root";
+$config["DB_PASS"]                 = "";
+$config["DB_PORT"]                 = "";
+$config["DB_DATABASE"]             = "nome_do_db";
+$config["DB_PERSISTENT"]           = true;
 
 
 /**
@@ -39,6 +41,6 @@ $email["SMTPUSER"]                  = "";
 $email["SMTPPASS"]                  = "";
 $email["SMTPSECURE"]                = "";    //ssl tls (ou deixe em branco)
 $email["SMTPPORT"]                  = "";
-$GLOBALS["EMAIL_CONFIG"]            = $email;
+$config["EMAIL_CONFIG"]            = $email;
 
 ?>
