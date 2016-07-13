@@ -21,9 +21,9 @@ $config["ROOT_URL"]                = "http://localhost/github/girafa/";
  */
 $config["DB_HOST"]                 = "localhost";
 $config["DB_USER"]                 = "root";
-$config["DB_PASS"]                 = "";
+$config["DB_PASS"]                 = "4930tb";
 $config["DB_PORT"]                 = "";
-$config["DB_DATABASE"]             = "nome_do_db";
+$config["DB_DATABASE"]             = "girafa_teste";
 $config["DB_PERSISTENT"]           = true;
 
 

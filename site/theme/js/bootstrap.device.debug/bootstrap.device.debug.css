@@ -1,0 +1,31 @@
+.deviceDebug{
+	width: 25px;
+	height: 25px;
+	background-color: red;
+	text-align:center;
+	position: fixed;
+	right: 0;
+	top: 0;
+	display:none;
+	
+	font-size: 10px;
+	line-height: 25px;
+	color: #FFF;
+}
+
+
+ @media (max-width: 768px){ /* xs - Celulares com telas menores */
+   #deviceDebugXS{ display: block; }
+ } 
+ 
+ @media (min-width :  769px) and (max-width :  991px) { /* sm - Celulares*/
+   #deviceDebugSM{ display: block; }
+ }
+ 
+ @media (min-width: 992px) and (max-width: 1199px) { /* md - Tablets*/
+   #deviceDebugMD{ display: block; }
+ }
+ 
+ @media (min-width: 1200px) { /* lg - Desktops */
+   #deviceDebugLG{ display: block; }
+ }
