@@ -1,0 +1,7 @@
+ .icone { float:left;cursor: pointer;}
+ .icone:hover { background-color: #F3F3F3;}
+
+ .iconeSelected {
+   float:left;
+   background-color: #F2F2F2;
+ }
