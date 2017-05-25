@@ -15,6 +15,6 @@
     "tests"
   ],
   "dependencies": {
-    "girafaCMS": "https://github.com/zbraestudio/girafaCMS.git"
+    "girafaCMS": "https://github.com/zbraestudio/girafaCMS.git#v2.0.1"
   }
 }
