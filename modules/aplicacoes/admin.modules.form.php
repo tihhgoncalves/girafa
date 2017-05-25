@@ -20,7 +20,7 @@ $form->AddLkpMultselect('SEGURANCA', $title, $description, 'sysModuleSecurityGro
 //Ícone
 $form->AddGroup('Ícone');
 $form->AddDescriptionText('Selecione um ícone para representar este módulo.');
-$form->AddFieldCustom('Icon', 'Ícone', 3);
+$form->AddFieldCustom('ICONE');
 $form->AddDescriptionText('Obs.: Os ícones deverão conter a dimensão de 60x50px e devem estar no diretório ..\cms\icons.');
 
 //Idiomas..
@@ -29,20 +29,14 @@ $form->AddLkpMultselect('IDIOMAS', 'Idiomas', 'O(s) idioma(s) que mostrará(rão
 $form->PrintHTML();
 
 
-function macroFromFields($fieldName, $record, $legend, $length, $columns, $valueDefault, $required, $readOnly, $height, $options, $required_str, $fileType, $fileTypeDescritio){
+function macroFormAfterField($fieldName, $record){
   global $cms, $moduleObj;
   
   switch ($fieldName){
     
-    case 'Icon':
+    case 'ICONE':
 
-      switch ($columns) {
-      	case 1: $columnsStr = 'oneColumn';break;
-      	case 2: $columnsStr = 'twoColumn';break;
-      	case 3: $columnsStr = 'threeColumn';break;
-      }      
-
-      $html .= '<div id="icones" class="field ' . $columnsStr . '">' . "\r\n";
+      $html  = '<div id="icones" class="field col3">' . "\r\n";
       $html .= '<input name="Icon" id="Icon" type="hidden" value="' . $record->Icon . '">' . "\r\n";
       
       $path = $cms->GetRootPath() . 'bower_components/girafaCMS/icons/';
