@@ -3,8 +3,8 @@ $tableName = 'sysModules';
 $form = new nbrAdminForms($tableName);
 
 $form->AddFieldString('Name', 'Nome ', 30, 2, null, true);
-$form->AddFieldString('Path', 'Diretório', 30, 1, null, true);
-$form->AddFieldString('Description', 'Descrição', 50, 3);
+$form->AddFieldString('Path', 'Diretório', 30, 2, null, true);
+$form->AddFieldString('Description', 'Descrição', 50, 4);
 $form->AddFieldHidden('Actived', 'Y');
 
 $form->AddCollections('Pastas', 'admin.modules.folders.grid.php', 'sysModuleFolders', 'Module');
@@ -36,7 +36,7 @@ function macroFormAfterField($fieldName, $record){
     
     case 'ICONE':
 
-      $html  = '<div id="icones" class="field col3">' . "\r\n";
+      $html  = '<div id="icones" class="field col4">' . "\r\n";
       $html .= '<input name="Icon" id="Icon" type="hidden" value="' . $record->Icon . '">' . "\r\n";
       
       $path = $cms->GetRootPath() . 'bower_components/girafaCMS/icons/';

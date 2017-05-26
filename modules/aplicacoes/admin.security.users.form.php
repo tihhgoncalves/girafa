@@ -2,9 +2,12 @@
 $form = new nbrAdminForms('sysAdminUsers');
 
 //Campos..
-$form->AddFieldString('Name', 'Nome', 100, 3);
+$form->AddFieldString('Name', 'Nome', 100, 2);
 $form->AddFieldString('Mail', 'E-mail', 50, 2);
-$form->AddFieldBoolean('Actived', 'Ativo?', 1, 'Y');
+$form->AddFieldBoolean('Actived', 'Ativo', 1, 'Y');
+
+$form->AddGroup('Segurança');
+$form->AddDescriptionText('Abaixo preencha as informações de segurança e acesso ao sistema.');
 $form->AddFieldPassword('Password', 'Senha', 20);
 
 $title = 'Grupo de Segurança';
