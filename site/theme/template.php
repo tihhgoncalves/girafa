@@ -12,6 +12,13 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 
+    <!-- rhinoJS -->
+    <script src="<?= get_config('BOWER_COMPONENTS_URL'); ?>rhinoJS/dist/rhinoJS.js"></script>
+
+    <!-- is_js -->
+    <script src="<?= get_config('BOWER_COMPONENTS_URL'); ?>is_js/is.min.js"></script>
+
+
     <!-- Carrega bootstrap.device.debug -->
     <!-- Quando terminar o site comentar as chamas abaixo -->
     <link rel="stylesheet" href="<?= $cms->GetFrontJavaScriptUrl(); ?>bootstrap.device.debug/bootstrap.device.debug.css">
@@ -44,6 +51,7 @@
         var theme_url = '<?= $cms->GetThemeUrl(); ?>';
         var pagename = '<?= $router->getPage(); ?>';
     </script>
+
 </head>
 
 <body>
@@ -75,3 +83,12 @@
 </div>
 </body>
 </html>
+<!-- girafaAnalytics -->
+<script type="text/javascript">
+    var girafa_analytics_path = '<?= get_config('BOWER_COMPONENTS_URL'); ?>girafaCMS/';
+
+    var script = document.createElement('script');
+    script.src = girafa_analytics_path + 'analytics.js';
+    document.body.appendChild(script);
+
+</script>
