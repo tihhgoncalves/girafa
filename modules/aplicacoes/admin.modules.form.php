@@ -20,8 +20,7 @@ $form->AddLkpMultselect('SEGURANCA', $title, $description, 'sysModuleSecurityGro
 //Ícone
 $form->AddGroup('Ícone');
 $form->AddDescriptionText('Selecione um ícone para representar este módulo.');
-$form->AddFieldCustom('ICONE');
-$form->AddDescriptionText('Obs.: Os ícones deverão conter a dimensão de 60x50px e devem estar no diretório ..\cms\icons.');
+$form->AddFieldCustom('Icon');
 
 //Idiomas..
 $form->AddLkpMultselect('IDIOMAS', 'Idiomas', 'O(s) idioma(s) que mostrará(rão) o módulo', 'sysModulesLanguages', 'Modulo', 'sysLanguages', 'Idioma', 'Nome', null, null, 3, false);
@@ -34,27 +33,21 @@ function macroFormAfterField($fieldName, $record){
   
   switch ($fieldName){
     
-    case 'ICONE':
+    case 'Icon':
 
       $html  = '<div id="icones" class="field col4">' . "\r\n";
       $html .= '<input name="Icon" id="Icon" type="hidden" value="' . $record->Icon . '">' . "\r\n";
       
-      $path = $cms->GetRootPath() . 'bower_components/girafaCMS/icons/';
-      if ($dh = opendir($path)) {
-        while (($file = readdir($dh)) !== false) {
-          
-          if($file != '.' && $file != '..' && $file != '.svn'){
-            
-           $html .= '<div class="' . (($record->Icon == $file)?'iconeSelected':'icone') . '" arquivoNome="' . $file . '">' . "\r\n";
-           $html .= '<img src="' . $cms->GetRootUrl() . 'bower_components/girafaCMS/icons/' . $file . '">' . "\r\n";
-           $html .= '</div>' . "\r\n";           
-           
-          }
-        }
-        closedir($dh);
-      }    
-      
-      $html .= '</div>' . "\r\n";      
+      $icons = array('fa-cutlery', 'fa-car', 'fa-microchip', 'fa-archive', 'fa-sliders', 'fa-users');
+
+      foreach($icons as $icon) {
+        $html .= '<div class="' . (($record->Icon == $icon) ? 'icone iconeSelected' : 'icone') . '" arquivoNome="' . $icon . '">' . "\r\n";
+        $html .= '<i class="fa ' . $icon . '" aria-hidden="true"></i>' . "\r\n";
+        $html .= '</div>' . "\r\n";
+      }
+
+      $html .= '</div>' . "\r\n";
+
       return $html;
     
   }

@@ -1,7 +1,27 @@
- .icone { float:left;cursor: pointer;}
- .icone:hover { background-color: #F3F3F3;}
-
- .iconeSelected {
+ .icone {
    float:left;
-   background-color: #F2F2F2;
+   cursor: pointer;
+   width: 40px;
+   height: 40px;
+   text-align: center;
+   margin: 5px;
+
+   -webkit-border-radius: 3px;
+   -moz-border-radius: 3px;
+   border-radius: 3px;
+ }
+
+  .iconeSelected,
+  .icone:hover{
+   float:left;
+   background-color: #666666;
+
+ }
+ .iconeSelected i,
+ .icone:hover i{
+   color: #CCCCCC;
+ }
+ .icone i{
+   font-size: 23px;
+   line-height: 40px;
  }

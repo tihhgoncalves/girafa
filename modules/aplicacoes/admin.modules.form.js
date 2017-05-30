@@ -4,9 +4,9 @@ $(document).ready(function(){
     
     $('#Icon').val($(this).attr('arquivonome'));
 
-    $('.iconeSelected').removeClass('iconeSelected').addClass('icone');
+    $('.iconeSelected').removeClass('iconeSelected');
     
-    $(this).removeClass('icone').addClass('iconeSelected');
+    $(this).addClass('iconeSelected');
     
   });
   
