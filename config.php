@@ -12,14 +12,22 @@ $config["SITEKEY"]                = "123456789";
 /**
  * Path's
  */
-$config["ROOT_PATH"]               = "D:/github/girafa/";
-$config["ROOT_URL"]                = "http://localhost/github/girafa/";
-
+if(is_localhost()){
+  $config["ROOT_PATH"]               = "D:/github/girafa/";
+  $config["ROOT_URL"]                = "http://localhost/github/girafa/";
+} else {
+  $config["ROOT_PATH"]               = "\home\zbra\girafa/";
+  $config["ROOT_URL"]                = "http://www.girafa.com.br/";
+}
 
 /**
  * DB
  */
-$config["DB_HOST"]                 = "localhost";
+if(is_localhost())
+  $config["DB_HOST"]                 = "girafa.com.br";
+else
+  $config["DB_HOST"]                 = "localhost";
+
 $config["DB_USER"]                 = "root";
 $config["DB_PASS"]                 = "";
 $config["DB_PORT"]                 = "";
