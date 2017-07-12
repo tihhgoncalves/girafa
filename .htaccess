@@ -1,3 +1,5 @@
+php_value upload_max_filesize 10M
+
 RewriteEngine On
 
 RewriteCond %{REQUEST_FILENAME} !-f
