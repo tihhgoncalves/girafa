@@ -16,10 +16,12 @@
    float:left;
    background-color: #666666;
 
+   position: relative;
+   transform: scale(3);
  }
  .iconeSelected i,
  .icone:hover i{
-   color: #CCCCCC;
+   color: #FFF;
  }
  .icone i{
    font-size: 23px;
