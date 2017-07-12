@@ -16,9 +16,14 @@
    float:left;
    background-color: #666666;
 
+
+ }
+ .icone:hover {
    position: relative;
    transform: scale(3);
  }
+
+
  .iconeSelected i,
  .icone:hover i{
    color: #FFF;
