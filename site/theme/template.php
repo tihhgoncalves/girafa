@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8"/>
-    <title><?= ($page->title . ' - ' . $site->title); ?></title>
+    <title><?= $page->GetTitle(); ?></title>
 
     <!-- Carrega jQuery -->
     <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>

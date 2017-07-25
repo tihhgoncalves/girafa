@@ -13,7 +13,7 @@ switch ($form->record->Tipo) {
 		break;
 		
 	case 'HTM':
-		$form->AddFieldHtml('Valor', 'Valor', 3, 150);
+		$form->AddFieldHtml('Valor', 'Valor', 350);
 		break;
 				
 	case 'BOL':
