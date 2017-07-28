@@ -34,7 +34,3 @@ function base64_url_decode($input) {
 	return base64_decode(strtr($input, '-_,', '+/='));
 }
 ?>
- * User: Criacao
- * Date: 09/12/2015
- * Time: 11:34
- */
