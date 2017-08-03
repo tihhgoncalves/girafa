@@ -15,10 +15,14 @@ switch ($form->record->Tipo) {
 	case 'HTM':
 		$form->AddFieldHtml('Valor', 'Valor', 350);
 		break;
-				
+
 	case 'BOL':
 		$form->AddFieldBoolean('Valor', 'Valor', 1);
-		break;	
+		break;
+
+	case 'ARQ':
+		$form->AddFieldFile('Valor', 'Valor');
+		break;
 }	
 
 $form->PrintHTML();
