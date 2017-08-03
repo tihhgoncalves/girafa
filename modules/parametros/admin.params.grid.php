@@ -5,7 +5,6 @@ $grid->securityDelete = false;
 $grid->securityNew = false;
 
 $grid->orders = 'Nome ASC';
-$grid->wheres = "Agrupador = 'CMS'";
 
 $grid->AddColumnString('Nome', 'Nome', 250);
 $grid->AddColumnList('Tipo', 'Tipo', 150, 'STR=String|TXT=Texto|BOL=Lógico|HTM=Html');
