@@ -4,7 +4,7 @@ global $PLUGINS_PATH;
 $action = $hub->GetParam('action')  ;
 $pluginID = $hub->GetParam('pluginID');
 
-$reg = LoadRecord('sysPlugins', $pluginID);
+$reg = LoadRecord('sis_plugins', $pluginID);
 
 //carrega configurações do plugin...
 include($PLUGINS_PATH . $reg->Path . '/config.php');
@@ -31,7 +31,7 @@ if($action == 'install'){
 
 //muda plugin como ativo!
 $post = new nbrTablePost();
-$post->table = 'sysPlugins';
+$post->table = 'sis_plugins';
 $post->id = $pluginID;
 
 if($action == 'install'){

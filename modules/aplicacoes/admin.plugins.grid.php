@@ -1,5 +1,5 @@
 <?
-$grid = new nbrAdminGrid('sysPlugins', 'Plugins');
+$grid = new nbrAdminGrid('sis_plugins', 'Plugins');
 $grid->macroFile = 'admin.plugins.macro.php';
 
 //Segurança...

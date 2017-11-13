@@ -1,5 +1,5 @@
 <?
-$grid = new nbrAdminGrid('sysModuleFolders', 'Pastas de Módulo do Sitema');
+$grid = new nbrAdminGrid('sis_pastas', 'Pastas de Módulo do Sitema');
 
 //Arquivos Complementares..
 $grid->formFile = 'admin.modules.folders.form.php';
@@ -10,7 +10,7 @@ $grid->AddControlOrder('Order');
 //Colunas...
 $grid->AddColumnString('Name', 'Nome', 400);
 $grid->AddColumnString('Grouper', 'Agrupador', 350);
-$grid->AddColumnTable('Module', 'Módulo', 200, 'sysModules', 'Name');
+$grid->AddColumnTable('Module', 'Módulo', 200, 'sis_modulos', 'Name');
 $grid->AddColumnBoolean('Actived', 'Ativo');
 
 $grid->PrintHTML();

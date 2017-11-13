@@ -1,5 +1,5 @@
 <?
-$form = new nbrAdminForms('sysLogs');
+$form = new nbrAdminForms('sis_logs');
 
 $form->AddGroup('Identificação do Usuário');
 $form->AddFieldString('UserName', 'Nome de Usuário', 100, 2, null, true, true);

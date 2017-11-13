@@ -1,5 +1,5 @@
 <?
-$grid = new nbrAdminGrid('sysAdminUsers', 'Usuários do Sistema');
+$grid = new nbrAdminGrid('sis_usuarios', 'Usuários do Sistema');
 
 //Arquivos Complementares..
 $grid->formFile = 'admin.security.users.form.php';

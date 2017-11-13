@@ -1,5 +1,5 @@
 <?
-$form = new nbrAdminForms('sysModuleReports');
+$form = new nbrAdminForms('sis_relatorios');
 
 $form->AddFieldHidden('Published', 'Y');
 

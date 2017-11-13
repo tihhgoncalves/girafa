@@ -69,7 +69,7 @@ rename($TMPfull . $diretorio_nome . '/', $dir);
 
 ///ADICIONA NA TABELA...
 $post = new nbrTablePost();
-$post->table  = 'sysPlugins';
+$post->table  = 'sis_plugins';
 $post->AddFieldString('Name', $plugin->name);
 $post->AddFieldString('Description', $plugin->description);
 $post->AddFieldString('URL', $plugin->url);

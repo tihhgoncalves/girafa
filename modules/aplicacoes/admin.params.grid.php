@@ -1,5 +1,5 @@
 <?
-$grid = new nbrAdminGrid('sysParams', 'Cadastro de Parâmetros');
+$grid = new nbrAdminGrid('sis_parametros', 'Cadastro de Parâmetros');
 $grid->formFile = 'admin.params.form.php';
 
 $grid->orders = 'Nome ASC';

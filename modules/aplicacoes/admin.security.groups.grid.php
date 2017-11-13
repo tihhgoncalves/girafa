@@ -1,5 +1,5 @@
 <?
-$grid = new nbrAdminGrid('sysAdminGroups', 'Grupos de Usuários');
+$grid = new nbrAdminGrid('sis_grupos', 'Grupos de Usuários');
 
 //Complementos SQL..
 $grid->orders = 'Name ASC';

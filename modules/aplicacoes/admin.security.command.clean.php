@@ -1,7 +1,7 @@
 <?
 //Apaga Todos os Registros (menos o que diz "Limpeza de Histórico" (CLN)
 
-$sql  = 'DELETE FROM sysLogs';
+$sql  = 'DELETE FROM sis_logs';
 $sql .= " WHERE Action <> 'CLN'";
 
 try{

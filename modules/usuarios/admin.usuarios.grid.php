@@ -1,5 +1,5 @@
 <?
-$grid = new nbrAdminGrid('sysAdminUsers', 'Usuários do Sistema');
+$grid = new nbrAdminGrid('sis_usuarios', 'Usuários do Sistema');
 
 $grid->wheres = 'A .`Group` <> 1 OR A.`GROUP` IS NULL';
 

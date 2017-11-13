@@ -1,5 +1,5 @@
 <?
-$grid = new nbrAdminGrid('sysModules', 'Módulos do Sistema');
+$grid = new nbrAdminGrid('sis_modulos', 'Módulos do Sistema');
 
 //Arquivos Complementares..
 $grid->formFile = 'admin.modules.form.php';

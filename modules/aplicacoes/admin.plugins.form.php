@@ -1,5 +1,5 @@
 <?
-$form = new nbrAdminForms('sysPlugins');
+$form = new nbrAdminForms('sis_plugins');
 
 $form->AddFieldString('Name', 'Nome', 50, 3, null, true, true);
 $form->AddFieldString('Path', 'Diretório', 30, 2, null, true, true);

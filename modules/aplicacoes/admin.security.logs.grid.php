@@ -1,5 +1,5 @@
 <?
-$grid = new nbrAdminGrid('sysLogs', 'Histórico de Ações');
+$grid = new nbrAdminGrid('sis_logs', 'Histórico de Ações');
 
 //Permissões
 $grid->securityDelete = false;

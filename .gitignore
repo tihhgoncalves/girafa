@@ -2,3 +2,4 @@
 bower_components
 *.hub
 site/langs/*
+*.bak

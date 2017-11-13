@@ -1,5 +1,5 @@
 <?
-$tableName = 'sysModuleFolders';
+$tableName = 'sis_pastas';
 
 $edition = $hub->ExistParam('ID');
 

@@ -1,5 +1,5 @@
 <?
-$grid = new nbrAdminGrid('sysModuleReports', 'Relatórios');
+$grid = new nbrAdminGrid('sis_relatorios', 'Relatórios');
 
 $grid->formFile = 'admin.modules.reports.form.php';
 

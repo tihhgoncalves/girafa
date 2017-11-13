@@ -1,5 +1,5 @@
 <?
-$form = new nbrAdminForms('sysAdminUsers');
+$form = new nbrAdminForms('sis_usuarios');
 
 //Campos..
 $form->AddFieldString('Name', 'Nome', 100, 3);
@@ -11,7 +11,7 @@ $title = 'Grupo de Segurança';
 $description  = 'Informe abaixo o(s) Grupo(s) a qual este Usuário se relaciona.';
 $description .= '<br>';
 $description .= 'O(s) Grupo(s) relacionado(s) a este Usuário controlará as sessões do CMS exibidas.';
-$form->AddLkpMultselect('GRUPOS', $title, $description, 'sysAdminUsersGroups', 'User', 'sysAdminGroups', 'Group', 'Name', 'sysAdminGroups.ID <> 1', null);
+$form->AddLkpMultselect('GRUPOS', $title, $description, 'sis_usuarios_grupos', 'User', 'sis_grupos', 'Group', 'Name', 'sis_grupos.ID <> 1', null);
 
 if($form->Editing()){
   $hub->SetParam('_page',  $moduleObj->path . 'admin.security.logs.grid.php');

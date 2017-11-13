@@ -1,5 +1,5 @@
 <?
-$form = new nbrAdminForms('sysParams');
+$form = new nbrAdminForms('sis_parametros');
 
 $form->AddFieldString('Nome', 'Nome', 100, 3);
 $form->AddFieldList('Tipo', 'Tipo', 'TXT=Texto|STR=String|BOL=Lógico|HTM=Html|ARQ=Arquivo', 1);
