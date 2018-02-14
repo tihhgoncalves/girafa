@@ -32,7 +32,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
 
     <!-- Carrega CSS -->
-    <link rel="stylesheet" href="<?= $cms->GetFrontStyleSheetUrl(); ?>master.css">
+    <link rel="stylesheet" href="<?= get_config('FRONT_THEME_URL'); ?>css/master.css">
 
     <!-- Carrega JS -->
     <script src="<?= get_config('FRONT_THEME_URL'); ?>js/jquery.dotdotdot.js"></script>
