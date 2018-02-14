@@ -21,12 +21,12 @@
 
     <!-- Carrega bootstrap.device.debug -->
     <!-- Quando terminar o site comentar as chamas abaixo -->
-    <link rel="stylesheet" href="<?= $cms->GetFrontJavaScriptUrl(); ?>bootstrap.device.debug/bootstrap.device.debug.css">
-    <script src="<?= $cms->GetFrontJavaScriptUrl(); ?>bootstrap.device.debug/bootstrap.device.debug.js"></script>
+    <link rel="stylesheet" href="<?= get_config('FRONT_THEME_URL'); ?>js/bootstrap.device.debug/bootstrap.device.debug.css">
+    <script src="<?= get_config('FRONT_THEME_URL'); ?>js/bootstrap.device.debug/bootstrap.device.debug.js"></script>
 
     <!-- Banners do Topo -->
-    <script src="<?= $cms->GetFrontJavaScriptUrl(); ?>cycle/jquery.cycle.js"></script>
-    <script src="<?= $cms->GetFrontJavaScriptUrl(); ?>cycle/responsivo.js"></script>
+    <script src="<?= get_config('FRONT_THEME_URL'); ?>js/cycle/jquery.cycle.js"></script>
+    <script src="<?= get_config('FRONT_THEME_URL'); ?>js/cycle/responsivo.js"></script>
 
     <!-- Controle de acesso pelo Mobile -->
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
@@ -35,8 +35,8 @@
     <link rel="stylesheet" href="<?= $cms->GetFrontStyleSheetUrl(); ?>master.css">
 
     <!-- Carrega JS -->
-    <script src="<?= $cms->GetFrontJavaScriptUrl(); ?>jquery.dotdotdot.js"></script>
-    <script src="<?= $cms->GetFrontJavaScriptUrl(); ?>base.js"></script>
+    <script src="<?= get_config('FRONT_THEME_URL'); ?>js/jquery.dotdotdot.js"></script>
+    <script src="<?= get_config('FRONT_THEME_URL'); ?>js/base.js"></script>
 
 
     <?
