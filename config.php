@@ -23,7 +23,10 @@ if(is_localhost()){
 /**
  * DB
  */
-$config["DB_HOST"]                 = "localhost";
+if(is_localhost())
+  $config["DB_HOST"]                 = "tiago.art.br";
+else
+  $config["DB_HOST"]                 = "localhost";
 $config["DB_USER"]                 = "root";
 $config["DB_PASS"]                 = "";
 $config["DB_PORT"]                 = "";
