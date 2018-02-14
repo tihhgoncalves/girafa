@@ -1,5 +1,13 @@
-.container{
-    margin-top: 25px;
-    margin-bottom: 25px;
-    background: #CCC;
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,300italic,300);
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: #F9F9F9;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Open Sans', sans-serif;
 }
