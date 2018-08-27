@@ -13,8 +13,8 @@ $config["SITEKEY"]                = "123456789";
  * Path's
  */
 if(is_localhost()){
-  $config["ROOT_PATH"]               = "D:/GitHub/girafa/";
-  $config["ROOT_URL"]                = "http://localhost/github/girafa/";
+  $config["ROOT_PATH"]               = "";
+  $config["ROOT_URL"]                = "";
 } else {
   $config["ROOT_PATH"]               = "\home\zbra\girafa/";
   $config["ROOT_URL"]                = "http://www.girafa.com.br/";
