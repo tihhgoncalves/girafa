@@ -15,7 +15,7 @@
     "tests"
   ],
   "dependencies": {
-    "girafaCMS": "https://github.com/tihhgoncalves/girafaCMS.git#^4.*.*",
+    "girafaCMS": "https://github.com/tihhgoncalves/girafaCMS.git#master",
     "is_js": "^0.9.0",
     "rhinoJS": "*"
   }
